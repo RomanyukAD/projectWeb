@@ -1,0 +1,16 @@
+pages\BasePage.class
+entities\UserDetail.class
+utils\listeners\MyListeners.class
+components\UserBlock.class
+qa\stub\controllers\PongController.class
+service\UserApi.class
+pages\UserPage.class
+components\BaseComponent.class
+pages\MainPage.class
+qa\stub\controllers\UserController.class
+qa\stub\configuration\CORSConfiguration.class
+qa\stub\StubServer.class
+entities\User.class
+extensions\UIExtension.class
+annotations\UrlPath.class
+annotations\Component.class
