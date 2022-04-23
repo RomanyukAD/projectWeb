@@ -10,6 +10,7 @@ pages\MainPage.class
 qa\stub\controllers\UserController.class
 qa\stub\configuration\CORSConfiguration.class
 qa\stub\StubServer.class
+utils\listeners\TestngListener.class
 entities\User.class
 extensions\UIExtension.class
 annotations\UrlPath.class
