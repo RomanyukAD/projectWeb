@@ -59,7 +59,7 @@ public class UserCardSelenoidTest {
 
     @Test
     @Description("Проверка перехода по URL в карточку первого пользователя")
-    public void getFirstUsersCard()  throws InterruptedException {
+    public void getFirstUsersCard() throws InterruptedException {
         usertId = "0";
         driver.get("http://localhost:3000/");
         $(By.xpath("//div[contains(@class, 'MuiPaper-root')]/a[contains(@href,'" + usertId + "')]"))

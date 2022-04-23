@@ -8,12 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.Color;
 
 
-public abstract  class BasePage<T> {
+public abstract class BasePage<T> {
     private static String baseUrl = "http://localhost:3000";
 
     private String getUrlPath() {
         UrlPath urlPath = getClass().getAnnotation(UrlPath.class);
-        if(urlPath != null) {
+        if (urlPath != null) {
             return urlPath.value();
         }
 
@@ -24,7 +24,7 @@ public abstract  class BasePage<T> {
     public T open() {
         Selenide.open(baseUrl);
 
-        return (T)this;
+        return (T) this;
     }
 
 
@@ -32,10 +32,8 @@ public abstract  class BasePage<T> {
     public T close() {
         Selenide.closeWebDriver();
 
-        return (T)this;
+        return (T) this;
     }
-
-
 
 
 }

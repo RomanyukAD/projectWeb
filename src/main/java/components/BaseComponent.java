@@ -15,7 +15,7 @@ public abstract class BaseComponent<T> {
 
     private By getComponentBy() {
         Component component = getClass().getAnnotation(Component.class);
-        if(component != null) {
+        if (component != null) {
             return component.value().startsWith("/")
                     ? By.xpath(component.value())
                     : By.cssSelector(component.value());

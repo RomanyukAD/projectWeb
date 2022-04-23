@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Selenide.webdriver;
 import static com.codeborne.selenide.WebDriverConditions.url;
 
 
-
 public class UserCardTest {
     private String usertId;
 
@@ -24,7 +23,7 @@ public class UserCardTest {
 
     @Test
     @Description("Проверка перехода по URL в карточку первого пользователя")
-    public void getFirstUsersCard(){
+    public void getFirstUsersCard() {
         usertId = "0";
 
         new MainPage().open();
@@ -35,7 +34,7 @@ public class UserCardTest {
 
     @Test
     @Description("Проверка наличия поля Name в карточке первого пользователя")
-    public void getNameInUsersCard(){
+    public void getNameInUsersCard() {
         usertId = "0";
 
         new MainPage().open();
@@ -46,7 +45,7 @@ public class UserCardTest {
 
     @Test
     @Description("Проверка наличия поля Id в карточке первого пользователя")
-    public void getIdInUsersCard(){
+    public void getIdInUsersCard() {
         usertId = "0";
 
         new MainPage().open();
@@ -58,7 +57,7 @@ public class UserCardTest {
 
     @Test
     @Description("Проверка наличия поля School Name в карточке первого пользователя")
-    public void getSchoolNameInUsersCard(){
+    public void getSchoolNameInUsersCard() {
         usertId = "0";
 
         new MainPage().open();
@@ -69,7 +68,7 @@ public class UserCardTest {
 
     @Test
     @Description("Проверка наличия поля Grade в карточке первого пользователя")
-    public void getGradeInUsersCard(){
+    public void getGradeInUsersCard() {
         usertId = "0";
 
         new MainPage().open();
@@ -80,7 +79,7 @@ public class UserCardTest {
 
     @Test
     @Description("Проверка наличия поля City в карточке первого пользователя")
-    public void getCityInUsersCard(){
+    public void getCityInUsersCard() {
         usertId = "0";
 
         new MainPage().open();

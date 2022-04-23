@@ -24,7 +24,7 @@ public class AllUsersPageTest {
 
     @Test
     @Description("Получить цвет линка  в hex до перехода в карточку пользователя")
-    public void getParamsFirstUserInTheList(){
+    public void getParamsFirstUserInTheList() {
         new MainPage().open();
         $(By.xpath(".MuiPaper-root .MuiTypography-root"));
         webdriver().shouldHave(url("http://localhost:3000/"));
@@ -36,7 +36,7 @@ public class AllUsersPageTest {
 
     @Test
     @Description("Получить цвет линка  в hex до перехода в карточку пользователя")
-    public void getGetColorLinkBeforeUserCard(){
+    public void getGetColorLinkBeforeUserCard() {
         new MainPage().open();
         $(By.xpath(".MuiPaper-root .MuiTypography-root"));
         webdriver().shouldHave(url("http://localhost:3000/"));
@@ -48,7 +48,7 @@ public class AllUsersPageTest {
 
     @Test
     @Description("Получить цвет линка  в hex после  перехода в карточку пользователя и возвращения на страницу со списком пользователей")
-    public void getGetColorLinkAfterUserCard(){
+    public void getGetColorLinkAfterUserCard() {
         String usertId = "0";
         new MainPage().open();
         webdriver().shouldHave(url("http://localhost:3000/"));

@@ -13,11 +13,11 @@ public class UserApi {
     private static String USER = "/users/get";
     private final RequestSpecification spec;
 
-    public UserApi(){
+    public UserApi() {
         spec = given().baseUri(BASE_URI).contentType(ContentType.JSON);
     }
 
-    public Response getUserById(User user){
+    public Response getUserById(User user) {
         return given(spec).log().all().when().get(USER + "/" + user.getId());
 
     }
